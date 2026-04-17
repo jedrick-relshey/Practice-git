@@ -1,4 +1,8 @@
-let age = 12;
-let code = 3;
+let experience = 5;
+let language = "js"
 
-alert(age >= 18 && code > 1);
+if (experience > 1 || language === "js") {
+    alert("pasado kana");
+} else {
+    alert("Sorry hindi ka pasado");
+}
