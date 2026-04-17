@@ -1,20 +1,19 @@
-let age  = 18;
-let experience = 5;
+let age = 15;
+let isRegistered = false;
 
-if (age >= 18) {
+if (isRegistered && age >= 18) {
 
-    if (experience > 1) {
+    alert("Valid Voter");
 
-        if (experience >= 5 ) {
-            alert("pasok kana talga lodi");
-        } else {
+} else if (!isRegistered && age >= 18) {
 
-            alert("pasado kana");
-        }
-    } else {
-        alert("hindi ka pumasa");
-    }
+    alert("Register muna");
 
-} else {
-    alert("bata kapa");
+} else if (isRegistered && age < 18) {
+    
+    alert("Invalid Voter");
+
+} else if (!isRegistered && age < 18) {
+    
+    alert("Non Voter");
 }
