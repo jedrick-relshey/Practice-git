@@ -1,8 +1,20 @@
+let age  = 18;
 let experience = 5;
-let language = "js"
 
-if (experience > 1 || language === "js") {
-    alert("pasado kana");
+if (age >= 18) {
+
+    if (experience > 1) {
+
+        if (experience >= 5 ) {
+            alert("pasok kana talga lodi");
+        } else {
+
+            alert("pasado kana");
+        }
+    } else {
+        alert("hindi ka pumasa");
+    }
+
 } else {
-    alert("Sorry hindi ka pasado");
+    alert("bata kapa");
 }
