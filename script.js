@@ -1,19 +1,28 @@
-let age = 15;
-let isRegistered = false;
+let days = 0;
 
-if (isRegistered && age >= 18) {
-
-    alert("Valid Voter");
-
-} else if (!isRegistered && age >= 18) {
-
-    alert("Register muna");
-
-} else if (isRegistered && age < 18) {
-    
-    alert("Invalid Voter");
-
-} else if (!isRegistered && age < 18) {
-    
-    alert("Non Voter");
+switch (days) {
+    case 1:
+        alert("Monday");
+        break;
+    case 2:
+        alert("Tuesday");
+        break;
+    case 3:
+        alert("Wednesday");
+        break;
+    case 4:
+        alert("Thursday");
+        break;
+    case 5:
+        alert("Friday");
+        break;
+    case 6:
+        alert("Saturday");
+        break;
+    case 7:
+        alert("Sunday");
+        break;
+    default:
+        alert("Unknown Day");
+        break;
 }
