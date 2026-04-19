@@ -1,11 +1,12 @@
-let numbers = [1,2,3,7,4,5];
+let letters = "banana";
 let i = 0;
-let largest = numbers[0];
+let count = 0;
 
-while (i < numbers.length) {
-    if (numbers[i] > largest) {
-        largest = numbers[i];
+
+while (i < letters.length) {
+    if (letters[i] === "a") {
+        letters++;
     }
-    i++;
-} 
-console.log(largest);
+}
+
+console.log(letters);
