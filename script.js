@@ -1,12 +1,12 @@
-let letters = "banana";
+let Name = ["JeDrIcK"];
 let i = 0;
-let count = 0;
+let uppercase = 0;
 
-
-while (i < letters.length) {
-    if (letters[i] === "a") {
-        letters++;
+while (i < Name.length) {
+    if (Name === Name[i].toUpperCase()) {
+        uppercase++;
     }
+    i++;
 }
 
-console.log(letters);
+console.log(uppercase);
