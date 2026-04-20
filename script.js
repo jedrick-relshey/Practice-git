@@ -1,7 +1,15 @@
-let people = ["Jedrick", "Relshey", "Cutchon", "Miclat"];
-let i = 0;
+let names = ["Jedrick", "LUis", "Jacob", "zaijan"];
+let searchNames = "JEDRICK";
+let Found = false;
 
-while (people[i]) {
-    console.log(people[i]);
-    i++;
+for (let i = 0;i < names.length; i++) {
+    
+    if (names[i].toLowerCase() === searchNames.toLowerCase()) { 
+        Found = true
+        console.log(`Found ${names[i]}`);
+        break;
+    }
+}
+if (!Found) {
+    console.log("Not Found");
 }
