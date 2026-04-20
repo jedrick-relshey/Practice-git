@@ -16,6 +16,9 @@ let people = [
     },
 ];
 
-console.log(`${people[0].firstname} ${people[0].lastname} ${people[0].Age}`);
-console.log(`${people[1].firstname} ${people[1].lastname} ${people[1].Age}`);
-console.log(`${people[2].firstname} ${people[2].lastname} ${people[2].Age}`);
+for (let i = 0; i < people.length; i++) {
+    console.log(`Fist Name : ${people[i].firstname}`);
+    console.log(`Last Name : ${people[i].lastname}`);
+    console.log(`Age Name : ${people[i].Age}`);
+    console.log("");
+}
