@@ -58,7 +58,7 @@ async function authLogin() {
     console.warn('Demo login log failed. Redirecting anyway.', error);
   }
 
-  window.location.href = 'home.html';
+  window.location.href = '/frontend/home.html';
 }
 
 loginForm.addEventListener('submit', async (event) => {
