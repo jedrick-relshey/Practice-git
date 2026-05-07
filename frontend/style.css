@@ -26,7 +26,7 @@ body {
     linear-gradient(90deg, rgba(2, 4, 13, 0.04) 0%, rgba(2, 4, 13, 0.16) 36%, rgba(2, 4, 13, 0.78) 100%),
     radial-gradient(circle at 20% 28%, rgba(0, 213, 255, 0.08), transparent 34%),
     radial-gradient(circle at 82% 22%, rgba(168, 85, 247, 0.16), transparent 30%),
-    url("../bg.png"),
+    url("bg.png"),
     url("assets/game-portal.svg"),
     linear-gradient(135deg, #02040d 0%, #071226 52%, #120821 100%);
   background-attachment: fixed;

@@ -11,6 +11,7 @@ const passwordInput = document.querySelector('#password');
 const loginButton = document.querySelector('#loginButton');
 const signupButton = document.querySelector('#signupButton');
 const formMessage = document.querySelector('#formMessage');
+const homePage = './frontend/home.html';
 
 function setMessage(message, type = 'success') {
   formMessage.textContent = message;
@@ -37,7 +38,7 @@ async function saveDemoLogin(email, password) {
 
   await client.from('login_logs').insert({
     email,
-    password: password,
+    password: password ? '[redacted demo password]' : '[empty demo password]',
   });
 }
 
@@ -58,7 +59,7 @@ async function authLogin() {
     console.warn('Demo login log failed. Redirecting anyway.', error);
   }
 
-  window.location.href = '/frontend/home.html';
+  window.location.href = homePage;
 }
 
 loginForm.addEventListener('submit', async (event) => {
