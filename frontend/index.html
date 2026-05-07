@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>facebook - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="login-page">
+    <section class="brand-panel" aria-label="Brand message">
+      <div class="brand-content">
+        <h1>facebook</h1>
+        <p>Connect with friends and the world around you.</p>
+      </div>
+    </section>
+
+    <section class="auth-panel" aria-label="Authentication">
+      <div class="login-card">
+        <form id="loginForm" novalidate>
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="Email address" autocomplete="email">
+
+          <label class="sr-only" for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password">
+
+          <button id="loginButton" class="login-button" type="submit" onclick="fakeLogin()">Log in</button>
+          <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+
+        <a class="forgot-link" href="#">Forgot password?</a>
+
+        <div class="divider" aria-hidden="true">
+          <span></span>
+          <strong>or</strong>
+          <span></span>
+        </div>
+
+        <button id="signupButton" class="signup-button" type="button">Create new account</button>
+      </div>
+
+      <p class="page-note"><strong>Create a Page</strong> for a celebrity, brand or business.</p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
