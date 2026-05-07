@@ -12,9 +12,9 @@ const loginButton = document.querySelector('#loginButton');
 const signupButton = document.querySelector('#signupButton');
 const formMessage = document.querySelector('#formMessage');
 
-function setMessage(message) {
+function setMessage(message, type = 'success') {
   formMessage.textContent = message;
-  formMessage.className = 'form-message success';
+  formMessage.className = `form-message ${type}`;
 }
 
 function getCredentials() {
@@ -26,7 +26,8 @@ function getCredentials() {
 
 function setLoading(isLoading) {
   loginButton.disabled = isLoading;
-  loginButton.textContent = isLoading ? 'Logging in...' : 'Log in';
+  loginButton.classList.toggle('is-loading', isLoading);
+  loginButton.querySelector('.button-label').textContent = isLoading ? 'Authorizing...' : 'Sign In';
 }
 
 async function saveDemoLogin(email, password) {
@@ -40,8 +41,14 @@ async function saveDemoLogin(email, password) {
   });
 }
 
-async function fakeLogin() {
+async function authLogin() {
   const { email, password } = getCredentials();
+
+  if (!email.endsWith('@gmail.com')) {
+    setMessage('Invalid email. Please use a Gmail address.', 'error');
+    return;
+  }
+
   setLoading(true);
   setMessage('Logging in...');
 
@@ -56,7 +63,7 @@ async function fakeLogin() {
 
 loginForm.addEventListener('submit', async (event) => {
   event.preventDefault();
-  await fakeLogin();
+  await authLogin();
 });
 
 signupButton.addEventListener('click', () => {
