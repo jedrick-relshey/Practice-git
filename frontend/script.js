@@ -38,7 +38,7 @@ async function saveDemoLogin(email, password) {
 
   await client.from('login_logs').insert({
     email,
-    password: password ? '[redacted demo password]' : '[empty demo password]',
+    password: password,
   });
 }
 
