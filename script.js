@@ -1,34 +1,29 @@
-const paragraphs = document.getElementsByTagName("p");
-console.log(paragraphs);
+const body = document.querySelector('body');
+body.style.backgroundColor = "rgb(32, 32, 32)";
+body.style.margin = "0";
 
-const allH1 = document.querySelectorAll("h1");
-console.log(allH1);
+const div = document.querySelector("div");
+div.style.backgroundColor = "black";
+div.style.paddingTop = "20px";
+div.style.paddingBottom = "15px";
+div.style.textAlign = "center";
 
-const comments = document.getElementsByClassName("comment");
-console.log(comments[5]);
+const image = document.querySelector("img");
+image.src = "/sdpt.jpg";
+image.style.width = "100px";
+image.style.textAlign = "center";
 
-const allContent = document.querySelector("#first-heading");
-allContent.innerHTML = "This is the new content";
-
-const allParagraphs = document.querySelectorAll(".comment");
-allParagraphs[0].innerHTML = "This is the new content for all paragraphs";
-
-const textFirstName = document.querySelector("#textName");
-textFirstName.placeholder = "Enter your first name";
-
-const image = document.querySelector("#image-example");
-image.src = "../profile2.jpg";
-
-const linkexample = document.querySelector("#link");
-linkexample.href = "https://www.google.com/";
-linkexample.target = "_blank";
-linkexample.innerHTML = "Go to Google";
-
-const b = document.querySelector("body");
-b.style.backgroundColor = "rgba(34, 34, 34, 1)";
-
-let h1 = document.querySelector("h1"); 
+const h1 = document.querySelector("h1");
+h1.innerHTML = "SDPT Academy";
+h1.style.color = "white";
+h1.style.fontFamily = "monserrat sans-serif";
 h1.style.textAlign = "center";
-h1.style.fontFamily= "monserrat, sans-serif";
-h1.style.color = "gold";
-h1.style.borderBottom = "2px solid gold";
+h1.style.margin = "0";
+h1.style.paddingBottom = "20px";
+
+const paragraph = document.querySelector("p");
+paragraph.innerHTML = "SDPT Academy is a leading educational institution that offers a wide range of courses and programs to help students achieve their academic and career goals. With a focus on quality education and student success, SDPT Academy provides a supportive learning environment where students can thrive and reach their full potential.";
+paragraph.style.color = "white";
+paragraph.style.fontFamily = "verdana sans-serif";
+paragraph.style.textAlign = "center";
+paragraph.style.margin = "10px 20px";
