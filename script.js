@@ -1,21 +1,15 @@
-let people = [ {
-    firstname: "Jedrick",
-    lastname: "Miclat",
-    age: 21
-}, {
-    firstname: "Jacob",
-    lastname: "Mercoleta",
-    age: 18
-}, {
-    firstname: "Zaijan",
-    lastname: "Miclat",
-    age: 16
-}];
+const paragraphs = document.getElementsByTagName("p");
+console.log(paragraphs);
 
-for (let i = 0; i < people.length; i++) {
-    console.log(`Fist Name : ${people[i].firstname}`);
-    console.log(`Last Name : ${people[i].lastname}`);
-    console.log(`Your Age : ${people[i].age}`);
-    console.log("");
-    
-}
+const allH1 = document.querySelectorAll("h1");
+console.log(allH1);
+
+const comments = document.getElementsByClassName("comment");
+console.log(comments[5]);
+
+const allContent = document.querySelector("#first-heading");
+allContent.innerHTML = "This is the new content";
+
+
+const allParagraphs = document.querySelectorAll(".comment");
+allParagraphs[0].innerHTML = "This is the new content for all paragraphs";
