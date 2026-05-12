@@ -21,3 +21,14 @@ image.src = "../profile2.jpg";
 
 const linkexample = document.querySelector("#link");
 linkexample.href = "https://www.google.com/";
+linkexample.target = "_blank";
+linkexample.innerHTML = "Go to Google";
+
+const b = document.querySelector("body");
+b.style.backgroundColor = "rgba(34, 34, 34, 1)";
+
+let h1 = document.querySelector("h1"); 
+h1.style.textAlign = "center";
+h1.style.fontFamily= "monserrat, sans-serif";
+h1.style.color = "gold";
+h1.style.borderBottom = "2px solid gold";
