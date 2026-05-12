@@ -17,4 +17,7 @@ const textFirstName = document.querySelector("#textName");
 textFirstName.placeholder = "Enter your first name";
 
 const image = document.querySelector("#image-example");
-image.src = "https://www.w3schools.com/images/w3schools_green.jpg";
+image.src = "../profile2.jpg";
+
+const linkexample = document.querySelector("#link");
+linkexample.href = "https://www.google.com/";
