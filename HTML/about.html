@@ -12,8 +12,28 @@
     <button onclick="sayHello()">Click me!</button>
     <input id="textbox" type="text" onfocus="triggerFocus()">
     <p onmouseover="hoverText()" onmouseout="hoverOut()" onclick="clicktext()">Hovet Me!</p>
-    <input id="box" type="text" oninput="triggerInput()">
-    <p id="paragraph"></p>
+    
+    <div>
+        <input id="txtEmail" type="email" placeholder="Email Address"/>
+        <input id="txtPassword" type="password" placeholder="Password"/>
+        <button onclick="signIn()">sign In</button>
+    </div>
+    <div>
+        <input type="checkbox" id="chkAgree">
+        <label for="chkAgree">Agree to <b>pravacy Policy</b></label>
+        <button onclick="submit()">Click</button>
+    </div>
+    <div>
+        <input type="radio" name="sex" id="rdMale" value="Male">
+        <label for="rdMale">Male</label>
+        
+        <input type="radio" name="sex" id="rdFemale" value="Female">
+        <label for="rdFemale">Male</label>
+
+        <button onclick="submitData()">Click</button>
+    </div>
+
+
     <script src="/script.js"></script>
 </body>
 </html>
