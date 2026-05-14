@@ -1,4 +1,4 @@
-function sayHello() {
+/* function sayHello() {
     const title = document.querySelector(".title");
     title.innerHTML = "Hello, baby!";
 };
@@ -48,9 +48,25 @@ function submit() {
     } else {
         alert("You have to Click the checkbox to submit the form.");
     };
-}; 
+};  */
 
-function submitData() {
-    const sex = document.querySelector("input[name=sex]:checked").value;
-    alert(sex);
+function submitForm() {
+
+    const agree = document.querySelector("#chkAgree").checked;
+
+    if (agree) {
+
+        const name = document.querySelector("#firstName").value;
+        const last = document.querySelector("#lastName").value;       
+        const birthDate = document.querySelector("#birthDate").value; 
+        const country = document.querySelector("#country").value;   
+        const typesex = document.querySelector("input[name=sextype]:checked").value;
+
+        document.querySelector("#lblFullName").innerHTML = name + " " + last;
+        document.querySelector("#lblBirthDay").innerHTML = birthDate;
+        document.querySelector("#lblCountry").innerHTML = country;
+        document.querySelector("#lblSex").innerHTML = typesex;
+    } else {
+        alert("You have to Click the checkbox to submit the form.");
+    }
 }
