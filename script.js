@@ -27,3 +27,9 @@ function triggerFocus() {
 
 const inp = document.querySelector("#textbox");
 inp.placeholder = "Type something here...";
+
+function triggerInput() {
+    const input = document.querySelector("#box");
+    const p = document.querySelector("#paragraph");
+    p.innerHTML = input.value;
+}
