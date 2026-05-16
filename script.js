@@ -83,4 +83,12 @@ setInterval(() => {
         body.style.background = "black"
     };
 
-},2000);
+},2000); 
+
+
+let fruits1 = ["Apple", "Banana", "Cherry"];
+let fruits2 = ["Durian", "Elderberry", "Fig"];
+
+let allFruits = [...fruits1, "mango", ...fruits2];
+
+alert(allFruits);
