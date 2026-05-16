@@ -103,3 +103,11 @@ function summation(...numbers) {
 
 let sum = summation(1, 2, 3, 4, 5);
 alert(sum);
+
+function allNames(lastName, ...firstName) {
+    for (let fName of firstName) {
+        alert(fName + " " + lastName);
+    };
+};
+
+allNames("Smith", "John", "Jane", "Doe");
