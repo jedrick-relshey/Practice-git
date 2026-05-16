@@ -74,8 +74,13 @@ function submitForm() {
     }; 
 };
 
-setTimeout(() => {
+setInterval(() => {
     const body = document.querySelector("body");
     body.style.transition = "1s";
-    body.style.backgroundColor = "black";
-}, 5000);
+    if (body.style.background === "black") {
+        body.style.background = "white"
+    }else {
+        body.style.background = "black"
+    };
+
+},2000);
