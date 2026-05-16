@@ -66,7 +66,16 @@ function submitForm() {
         document.querySelector("#lblBirthDay").innerHTML = birthDate;
         document.querySelector("#lblCountry").innerHTML = country;
         document.querySelector("#lblSex").innerHTML = typesex;
+
     } else {
+
         alert("You have to Click the checkbox to submit the form.");
-    }
-}
+
+    }; 
+};
+
+setTimeout(() => {
+    const body = document.querySelector("body");
+    body.style.transition = "1s";
+    body.style.backgroundColor = "black";
+}, 5000);
