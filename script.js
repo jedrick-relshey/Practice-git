@@ -86,7 +86,7 @@ setInterval(() => {
 },2000); 
 
 
-let fruits1 = ["Apple", "Banana", "Cherry"];
+/*let fruits1 = ["Apple", "Banana", "Cherry"];
 let fruits2 = ["Durian", "Elderberry", "Fig"];
 
 let allFruits = [...fruits1, "mango", ...fruits2];
@@ -110,4 +110,15 @@ function allNames(lastName, ...firstName) {
     };
 };
 
-allNames("Smith", "John", "Jane", "Doe");
+allNames("Smith", "John", "Jane", "Doe"); */
+
+
+const user = {
+    id : 1,
+    name: "John",
+    age: 30,
+    city: "New York"
+};
+
+let {id, name, age, city} = user;
+alert(id + "\n" +name + "\n" + age + "\n" + city);
