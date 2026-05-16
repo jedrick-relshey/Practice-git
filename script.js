@@ -92,3 +92,14 @@ let fruits2 = ["Durian", "Elderberry", "Fig"];
 let allFruits = [...fruits1, "mango", ...fruits2];
 
 alert(allFruits);
+
+function summation(...numbers) {
+    let total = 0;
+    for (let num of numbers) {
+        total += num;
+    }; 
+    return total;
+};
+
+let sum = summation(1, 2, 3, 4, 5);
+alert(sum);
