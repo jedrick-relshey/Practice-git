@@ -1,4 +1,4 @@
-/* function sayHello() {
+function sayHello() {
     const title = document.querySelector(".title");
     title.innerHTML = "Hello, baby!";
 };
@@ -48,7 +48,7 @@ function submit() {
     } else {
         alert("You have to Click the checkbox to submit the form.");
     };
-};  */
+};  
 
 function submitForm() {
 
@@ -86,7 +86,7 @@ setInterval(() => {
 },2000); 
 
 
-/*let fruits1 = ["Apple", "Banana", "Cherry"];
+let fruits1 = ["Apple", "Banana", "Cherry"];
 let fruits2 = ["Durian", "Elderberry", "Fig"];
 
 let allFruits = [...fruits1, "mango", ...fruits2];
@@ -110,7 +110,7 @@ function allNames(lastName, ...firstName) {
     };
 };
 
-allNames("Smith", "John", "Jane", "Doe"); */
+allNames("Smith", "John", "Jane", "Doe");
 
 
 const user = {
