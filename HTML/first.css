@@ -1,11 +1,21 @@
-.comment{
-    background-color: red;
+body{
+    margin: 0;
 }
 
-#post{
-    background-color: blue;
+nav{
+    background-color: black;
+    padding: 5px;
+    position: fixed;
+    top: 0;
 }
 
-div{
-    color: aliceblue;
+a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-family: verdana;
+}
+
+a:hover{
+    color: gold;
 }
